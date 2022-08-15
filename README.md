@@ -14,7 +14,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://yasinabdmahmood.github.io/Awsome-booksto-do-list/)
+[Live Demo Link](https://yasinabdmahmood.github.io/To-do-list/)
 
 
 
@@ -22,7 +22,7 @@
 
 To get a local copy up and running follow these simple example steps.
 1. Open terminal or cmd on you local machine and navigate to your desired directory.
-2. **Run**    *'git clone https://github.com/yasinabdmahmood/To-do-list.git'*
+2. **Run**    *'https://github.com/yasinabdmahmood/To-do-list.git'*
 3. **Run**   *'code'*
 
 
