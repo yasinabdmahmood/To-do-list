@@ -1,5 +1,3 @@
-const isLocalStorageEmpty=()=>{
-    return localStorage.getItem('data')==null
-}
+const isLocalStorageEmpty = () => localStorage.getItem('data') == null;
 
 export default isLocalStorageEmpty;
