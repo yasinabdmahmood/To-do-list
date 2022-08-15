@@ -10,7 +10,7 @@ const tasks = [
     index: 4,
   },
   {
-    discription: 'Do dishes',
+    discription: 'Do dish',
     complete: false,
     index: 2,
   },

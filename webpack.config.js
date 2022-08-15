@@ -7,6 +7,9 @@ module.exports = {
     index: './src/index.js',
 
   },
+  devServer: {
+    static: './dist',
+  },
 
   output: {
     filename: '[name].js',
@@ -53,5 +56,8 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
+  optimization: {
+    runtimeChunk: 'single',
+  },
 
 };
