@@ -16,7 +16,7 @@ const addNewTask = (task) => {
   const div = generateTask(task);
   addInterAction(div);
   removeFuncionality(div);
-  editPreserve(div)
+  editPreserve(div);
   document.querySelector('.task-list').appendChild(div);
 };
 

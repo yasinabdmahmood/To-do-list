@@ -5,7 +5,7 @@ import getTasks from './modules/tasks.js';
 import isLocalStorageEmpty from './modules/isLocalStorageEmpty.js';
 import addNewTask from './modules/addNewTask.js';
 import removeFuncionality from './modules/removeFuncionality.js';
-import editPreserve from './modules/editPreserve.js'
+import editPreserve from './modules/editPreserve.js';
 
 /// ////Add event listener to update the checkbox status
 
@@ -21,7 +21,7 @@ window.onload = () => {
     tasks.forEach((el) => {
       const div = generateTask(el.discription);
       removeFuncionality(div);
-      editPreserve(div)
+      editPreserve(div);
       document.querySelector('.task-list').appendChild(div);
     });
 
