@@ -14,7 +14,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://yasinabdmahmood.github.io/To-do-list/)
+[Live Demo Link](https://yasinabdmahmood.github.io/To-do-list/dist/)
 
 
 
