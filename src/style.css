@@ -116,6 +116,10 @@ body {
 
 .three-dots {
   opacity: 0.5;
+  display: none;
+}
+.trash{
+  display: block;
 }
 
 .done {
