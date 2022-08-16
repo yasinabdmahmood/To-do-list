@@ -17,6 +17,7 @@ const addNewTask = (task) => {
   addInterAction(div);
   removeFuncionality(div);
   editPreserve(div);
+
   document.querySelector('.task-list').appendChild(div);
 };
 

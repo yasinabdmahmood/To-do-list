@@ -6,6 +6,8 @@ import isLocalStorageEmpty from './modules/isLocalStorageEmpty.js';
 import addNewTask from './modules/addNewTask.js';
 import removeFuncionality from './modules/removeFuncionality.js';
 import editPreserve from './modules/editPreserve.js';
+import updateCheckBox from './modules/updateCheckBox.js';
+import clearCompleted from './modules/clearCompleted.js';
 
 /// ////Add event listener to update the checkbox status
 
@@ -26,6 +28,7 @@ window.onload = () => {
     });
 
     checkInteraction();
+    updateCheckBox();
   }
 };
 
@@ -34,3 +37,5 @@ document.getElementById('add-new-task').onchange = (e) => {
   addNewTask(newTask);
   e.target.value = '';
 };
+
+document.querySelector('.end button').onclick = clearCompleted;
