@@ -11,7 +11,7 @@ import clearCompleted from './modules/clearCompleted.js';
 
 /// ////Add event listener to update the checkbox status
 
-/////////////////////////////////////////////
+/// //////////////////////////////////////////
 
 window.onload = () => {
   if (isLocalStorageEmpty()) {
@@ -19,7 +19,6 @@ window.onload = () => {
   } else {
     const tasks = getTasks();
 
-   
     tasks.forEach((el) => {
       const div = generateTask(el.discription);
       removeFuncionality(div);

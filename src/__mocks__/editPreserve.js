@@ -1,5 +1,3 @@
-const editPreserve=()=>{
-    return null;
-}
+const editPreserve = () => null;
 
-exports.editPreserve=editPreserve;
+exports.editPreserve = editPreserve;

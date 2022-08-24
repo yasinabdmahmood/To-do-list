@@ -1,4 +1,2 @@
-const addInterAction=()=>{
-    return null
-}
-exports.addInterAction=addInterAction;
+const addInterAction = () => null;
+exports.addInterAction = addInterAction;

@@ -1,5 +1,3 @@
-const removeFuncionality=()=>{
-    return null
-}
+const removeFuncionality = () => null;
 
-exports.removeFuncionality=removeFuncionality;
+exports.removeFuncionality = removeFuncionality;

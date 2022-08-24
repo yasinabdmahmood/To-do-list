@@ -1,2 +1,2 @@
 const getTasks = () => [];
-exports.getTasks=getTasks;
+exports.getTasks = getTasks;
