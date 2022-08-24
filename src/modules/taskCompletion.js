@@ -1,4 +1,4 @@
-import getTasks from './tasks';
+import getTasks from './tasks.js';
 
 const whatIsIndex = (current) => {
   let i = 0;
