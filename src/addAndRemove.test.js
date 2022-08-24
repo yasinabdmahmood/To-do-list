@@ -97,20 +97,3 @@ describe('Todo List Add and Remove', () => {
   });
 });
 
-// test('test passed',()=>{
-//   document.body.innerHTML =
-//   '<div class="task-list">' +
-//   '</div>';
-//   addNewTask('task1');
-//   addNewTask('task2');
-//   const arr=getTasks();
-//   const list = document.querySelectorAll('.taks-wrapper');
-//   expect(arr.length).toBe(2);
-//   expect(list).toHaveLength(2);
-//   const div=document.querySelector('.taks-wrapper');
-//   removeFromDom(div);
-//   const arr2=getTasks();
-//   const list2 = document.querySelectorAll('.taks-wrapper');
-//   expect(arr2.length).toBe(1)
-//   expect(list2).toHaveLength(1);
-// })
