@@ -88,11 +88,12 @@ const addNewTask = (task) => {
  })
  //Remove test
  describe('Remove', () => {
-  const div=document.querySelector('.taks-wrapper');
-  removeFromDom(div);
+  
   test('Local storage to have 1 item', () => {
+    const div=document.querySelector('.taks-wrapper');
+    removeFromDom(div);
     const arr2=getTasks();
-    expect(arr2.length).toBe(1)
+    expect(arr2.length).toBe(1);
   })
 
   test('The DOM to have 1 items', () => {
