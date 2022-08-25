@@ -1,26 +1,13 @@
+import generateTask from './util/generateTask.js';
+import addInterAction from './modules/addInterAction.js';
+import removeFuncionality from './modules/removeFuncionality.js';
+import editPreserve from './modules/editPreserve.js';
+import getTasks from './modules/tasks.js';
 /* eslint-disable no-unused-vars */
 
 // set up localStorage
 localStorage.setItem('data', '[]');
-// Create mockup functions
-const addInterAction = (div) => null;
-const removeFuncionality = (div) => null;
-const editPreserve = (div) => null;
-// Redeclare the dependency functions
-const getTasks = () => JSON.parse(localStorage.getItem('data'));
-const generateTask = (task) => {
-  const html = `
-      <img id="unchecked" class="unchecked" src="./assets/images/unchecked-checkbox.png" alt="">
-      <img id="done" class="done" src="./assets/images/done.png" alt="">
-      <input type="text" value="${task}">
-      <img class="three-dots" src='../assets/images/three-dots-vertical.svg' alt="">
-      <img class="trash" src= '../assets/images/trash.svg' alt="">
-      `;
-  const div = document.createElement('div');
-  div.classList.add('taks-wrapper');
-  div.innerHTML = html;
-  return div;
-};
+
 /// the functions to be tested
 const addNewTask = (task) => {
   const data = getTasks();
@@ -85,3 +72,5 @@ describe('Todo List Add and Remove', () => {
     });
   });
 });
+
+export default addNewTask;
