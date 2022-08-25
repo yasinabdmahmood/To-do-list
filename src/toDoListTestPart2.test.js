@@ -46,6 +46,7 @@ const editPreserve = (div) => {
   
     localStorage.setItem('data', JSON.stringify(arr));
   };
+  // A fuction to clear all complete function.
   const clearCompleted = () => {
     const arr = getTasks();
     const dom = document.querySelectorAll('.taks-wrapper');
