@@ -1,18 +1,6 @@
 /* eslint-disable no-unused-vars */
-
-// Create mockup localStorage
-const localStorage = {
-  obj: { data: '[]' },
-  setItem(name, data) {
-    this.obj[name] = data;
-  },
-  getItem(k) {
-    if (this.obj[k] == null) {
-      return null;
-    }
-    return this.obj[k];
-  },
-};
+// set up local storage
+localStorage.setItem('data', '[]');
 // Create mockup functions
 const addInterAction = (div) => null;
 const removeFuncionality = (div) => null;
