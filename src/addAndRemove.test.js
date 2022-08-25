@@ -1,8 +1,8 @@
-import generateTask from './util/generateTask.js'
-import addInterAction from './modules/addInterAction.js'
-import removeFuncionality from './modules/removeFuncionality.js'
-import editPreserve from './modules/editPreserve.js'
-import getTasks from './modules/tasks.js'
+import generateTask from './util/generateTask.js';
+import addInterAction from './modules/addInterAction.js';
+import removeFuncionality from './modules/removeFuncionality.js';
+import editPreserve from './modules/editPreserve.js';
+import getTasks from './modules/tasks.js';
 /* eslint-disable no-unused-vars */
 
 // set up localStorage
