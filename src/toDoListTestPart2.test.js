@@ -1,7 +1,7 @@
 import addNewTask from './addAndRemove.test.js'
 import getTasks from './modules/tasks.js'
 
-
+//Function responsible for editing the task description
 const editPreserve = (div) => {
     const newVal =div.querySelector('input').value ;
       let current = div;
@@ -17,6 +17,34 @@ const editPreserve = (div) => {
       arr[index].discription = newVal;
       localStorage.setItem('data', JSON.stringify(arr));
     
+  };
+
+  //Function responsible for updating an item's 'completed' status
+  const whatIsIndex = (current) => {
+    let i = 0;
+    while (current !== null) {
+      i += 1;
+      current = current.previousElementSibling;
+    }
+    return i - 1;
+  };
+  
+  const checked = (div) => {
+    const index = whatIsIndex(div);
+  
+    const arr = getTasks();
+    arr[index].complete = true;
+  
+    localStorage.setItem('data', JSON.stringify(arr));
+  };
+  
+  const unchecked = (div) => {
+    const index = whatIsIndex(div);
+  
+    const arr = getTasks();
+    arr[index].complete = false;
+  
+    localStorage.setItem('data', JSON.stringify(arr));
   };
 
 
@@ -43,9 +71,17 @@ const editPreserve = (div) => {
       expect(newTask).toBe('updated Task');
     });
 
-    test('The DOM to have 2 items', () => {
-      const list = document.querySelectorAll('.taks-wrapper');
-      expect(list).toHaveLength(1);
+    test('Expect the first tasks complete status to be true', () => {
+        addNewTask("Task2");
+        addNewTask("Task3");
+        const tasks = document.querySelectorAll('.taks-wrapper');
+        tasks.forEach(el=>checked(el));
+        unchecked(tasks[1]);
+        const arr = getTasks();
+        const status=arr.map(el=>el.complete)
+        expect(status).toEqual([true,false,true]);
+        
+        
     });
 })
 
