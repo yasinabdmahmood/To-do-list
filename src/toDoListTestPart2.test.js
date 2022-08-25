@@ -46,8 +46,17 @@ const editPreserve = (div) => {
   
     localStorage.setItem('data', JSON.stringify(arr));
   };
-
-
+  const clearCompleted = () => {
+    const arr = getTasks();
+    const dom = document.querySelectorAll('.taks-wrapper');
+    const arr2 = arr.filter((element, index) => {
+      if (element.complete) { dom[index].remove(); }
+      return !element.complete;
+    });
+  
+    arr2.sort((b, a) => b.index - a.index);
+    localStorage.setItem('data', JSON.stringify(arr2));
+  };
 
   describe('Testing functionalities', () => {
    
@@ -83,5 +92,12 @@ const editPreserve = (div) => {
         
         
     });
+    test('Expect all the copmleted tasks to be removed from local storage', () => {
+      clearCompleted();
+      const arr = getTasks();
+      expect(arr.length).toBe(1);
+       
+   });
+
 })
 
